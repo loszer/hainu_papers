@@ -1,2 +1,5 @@
 1. session
     use the memory and files to store the session data
+
+2. cache
+    have no idea at now

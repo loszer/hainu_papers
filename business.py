@@ -11,7 +11,9 @@ def getPapersByPages(limit, page_num):
     res = c.query("select * form papers where 1 order by create_time DES limit "+page_num+"")
     conn.commit()
     conn.close()
-    pass
+    if res == NULL or len(res) == 0:
+        return False
+    return res
 
 def createUser():
     pass
